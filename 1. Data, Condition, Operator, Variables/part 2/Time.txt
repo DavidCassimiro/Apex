@@ -1,0 +1,1 @@
+System.debug('Time: ' + Time.newInstace(22, 40, 36, 03));

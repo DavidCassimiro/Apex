@@ -1,0 +1,6 @@
+Set<Integer> setOfNumbers = new set<Integer>();
+setOfNumbers.add(3);
+setOfNumbers.add(2);
+setOfNumbers.add(2);
+setOfNumbers.add(1);
+System.debug('setOfNumbers: ' + setOfNumbers);

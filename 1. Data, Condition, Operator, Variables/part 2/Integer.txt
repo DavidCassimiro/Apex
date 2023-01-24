@@ -1,0 +1,2 @@
+Integer intValue = 27;
+System.debug('Integer: ' + intValue);

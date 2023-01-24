@@ -1,0 +1,7 @@
+Map<Integer, String> mapOfIntegerString = new Map<Interger, String>();
+mapOfIntegerString.put(1, 'one');
+mapOfIntegerString.put(2, 'two');
+mapOfIntegerString.put(3, 'three');
+mapOfIntegerString.put(3, 'four');
+System.debug('mapOfIntegerString: ' + mapOfIntegerString);
+System.debug('Value at 3: ' + mapOfIntegerString(3);

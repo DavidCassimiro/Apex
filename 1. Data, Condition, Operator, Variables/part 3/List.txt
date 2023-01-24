@@ -1,0 +1,6 @@
+List<Integer> listOfNumbers = new List<Integer>();
+listOfNumbers.add(1);
+listOfNumbers.add(2);
+listOfNumbers.add(3);
+listOfNumbers.add(3);
+System.debug('listOfNumbers: ' + listOfNumbers);

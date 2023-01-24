@@ -1,0 +1,2 @@
+Boolean isActive = true;
+System.debug('Boolean: ' + isActive);

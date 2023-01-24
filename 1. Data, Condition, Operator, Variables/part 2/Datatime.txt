@@ -1,0 +1,2 @@
+Datatime currDataTime = Datatime.now();
+System.debug('Data: ' + currDataTime);

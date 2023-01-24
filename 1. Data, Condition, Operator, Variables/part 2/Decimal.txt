@@ -1,0 +1,2 @@
+Decimal decValue = 27.01;
+System.debug('Decimal: ' + decValue);

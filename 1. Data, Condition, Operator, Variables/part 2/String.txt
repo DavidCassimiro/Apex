@@ -1,0 +1,2 @@
+String o = 'Hello World';
+System.debug('Blob: ' + Blob.valueOf(o));

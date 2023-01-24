@@ -1,0 +1,6 @@
+List<integer> listOfNumbers = new List<integer>();
+Integer maxListSize = 5;
+for(integer i = 1; i <= maxListSize; i++){
+	listOfNumbers.add(i);
+}
+System.debug('listOfNumbers: ' + listOfNumbers);

@@ -1,0 +1,2 @@
+Id recordId = [SELECT Id FROM Account LIMIT 1][0].Id; 
+System.debug('ID: ' + recordId);

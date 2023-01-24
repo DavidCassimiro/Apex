@@ -1,0 +1,1 @@
+System.debug('Data: ' + Data.newInstace(2023, 01, 18));

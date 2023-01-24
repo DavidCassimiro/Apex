@@ -1,0 +1,2 @@
+Object objValue = o;
+System.debug('Object: ' + objValue);
