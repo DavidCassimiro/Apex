@@ -1,0 +1,30 @@
+String waterLevel = 'empty';
+  
+//option 1 using a single value
+switch on waterLevel {
+    when 'empty' {
+        System.debug('Fill the tea kettle');
+    }
+    when 'half' {
+        System.debug('Fill the tea kettle');
+    }
+    when 'full' {
+        System.debug('The tea kettle is full');
+    }
+    when else {
+        System.debug('Error!');
+    }
+}
+  
+//option 2 using multiple values
+switch on waterLevel {
+    when 'empty', 'half' { //when waterLevel is either empty or half
+        System.debug('Fill the tea kettle');
+    }
+    when 'full' {
+        System.debug('The tea kettle is full');
+    }
+    when else {
+        System.debug('Error!');
+    }
+}

@@ -1,0 +1,8 @@
+String waterLevel = 'full'; /*This variable keeps track of the water level status: full or empty*/
+  
+if(waterLevel == 'empty') {
+    System.debug('Fill the tea kettle');
+    waterLevel = 'full'; /*Once the tea kettle is filled the variable is changed to full*/
+} else {
+    System.debug('The tea kettle is full');
+}
