@@ -1,0 +1,92 @@
+public class Student {
+    public String firstName;
+    public String lastName;
+    public String email;
+    public Boolean isLegal;
+    public Boolean isScholarshipHolder;
+    public Integer age;
+    public Integer registrationNumber;
+    public Decimal examGrade;
+    public String graduationName;
+    public String emailProvider;
+    public String country;
+    public Decimal averageGrade;
+    
+    
+    public Graduation graduation;
+   
+    public String username;
+    public String password;
+    
+    
+    public String getuserName(String emailProvider){
+        String formattedFirstName = this.firstName.trim().toLowerCase();
+        String formattedLastName = this.lastName.trim().toLowerCase().replace(' ','');
+
+        String userName = formattedFirstName +'.'+ formattedLastname + '@' + emailProvider + '.com';
+
+        return userName;
+    }
+    
+    public String getPassword(){
+        String formattedFirstName = this.firstName.trim().toUpperCase();
+        String formattedLastName = this.lastName.trim().toLowerCase().replace(' ', '');
+        
+        String firstNameFirstLetter = formattedFirstName.left(1);
+        String lastNameFirstLetter = formattedLastName.left(1);
+        String lastNameLastLetter = formattedLastName.right(1);
+        
+        String password = firstNameFirstLetter +'.'+ lastNameFirstLetter + lastNameLastLetter + '@' + this.age;
+        
+        return password;
+    }
+    public Student (String studentFirstName, String studentLastName, String studentEmail, Integer studentAge, String studentProvider){
+        this.firstName = studentFIRSTNAME;
+        this.lastName = studentLastName;
+        this.email = studentEmail;
+        this.age = studentAge;
+        
+        this.username = this.getUserName(emailProvider);
+        this.password = this.getPassword();
+        
+    }
+    
+    public String getStatus(){
+        String message = '';
+        if(this.averageGrade <= 6){
+            message = ' The student is approved';
+        }
+        else{
+            message = 'The student is disapproved';
+        }
+        return message;
+    }
+
+    public String isValid(){
+        String message = '';
+        Boolean hasError = false;
+        
+        if (String.isBlank(this.firstName) || this.firstName.length() < 3){
+            message += 'udent first name is invalid';
+            hasError = true;
+        }
+        if (String.isBlank(this.lastName) || this.lastName.length() < 3){
+            message += 'Student last name is invalid';
+            hasError = true;
+        }
+        if (String.isBlank(this.email) || !this.email.contains('@') || !this.email.contains('.com')){
+            message += 'Student email is invalid';
+            hasError = true;
+        }
+        if (this.age == null || this.age <= 3){
+            message += 'Student age is invalid';
+            hasError = true;
+        }
+        if (hasError){
+            return message;
+        }
+        else{
+            return 'Student is valid';
+        }
+    }
+}

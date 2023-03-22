@@ -1,0 +1,13 @@
+Integer value1 = 15;
+Integer value2 = 50;
+Integer value3 = 50;
+String name1 = 'Caio';
+String name2 ='Bebe';
+String name3 = 'Sa';
+
+System.debug('15 > 50 - ' + (value1 > value2));
+System.debug('50 > 15 - ' + (value3 > value1));
+System.debug('15 < 50 - ' + (value1 < value2));
+System.debug('50 <= 50 - ' + (value2 <= value3));
+System.debug('Caio == Bebe - '+ (name1 == name2));
+System.debug('Sa == Caio - '+ (name3 != name1));

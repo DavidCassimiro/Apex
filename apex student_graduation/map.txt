@@ -1,0 +1,7 @@
+Map<String, Integer> nameAge = new Map<Strig, Integer>();
+
+nameAde.put('Sarah', 25);
+nameAge.put('Julius', 42);
+nameAge.put('Denis', 27);
+
+System.debug(nameAge(0))

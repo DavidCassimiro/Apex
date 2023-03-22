@@ -1,0 +1,16 @@
+public String getFullName(String firstName, String lastName) {
+    String fullName = 'Caro ' + firstName +', sobrenome '+ lastname +', voce foi convocado! ';
+    return fullName;
+}
+
+String firstName = 'Tonho';
+String lastName = 'Opin';
+String fullName1 = getFullName(firstname, lastName);
+System.debug(fullName1);
+
+
+
+//a função menimiza a execução de terefas, que poderiam ser colocadas no 'System.debug'
+//Necessario criar apenas uma função e utilizar os dados inseridos posteriormentee, para realizar operações
+
+//(função não tem dados)

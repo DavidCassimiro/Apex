@@ -1,0 +1,23 @@
+Graduation graduation1 = new Graduation();
+graduation1.name ='Computer Engeering';
+graduation1.semesterQuantity = 10;
+graduation1.coordinatorName = 'Isaac Newtom';
+graduation1.approvalGrade = 7.4;
+graduation1.isActive = true;
+graduation1.scholarshipAvailable = true;
+graduation1.scholarshipQuality = 164;
+
+System.debug('graduation1 => '+ graduation1);
+
+Student student1 = new Student();
+student1.graduation = graduation1;
+
+System.debug('Student1 => ' + student1);
+System.debug('student1.graduation => '+ student1.graduation);
+
+
+
+System.debug(student1.graduation.name);
+System.debug(student1.graduation.semesterQuantity);
+System.debug(student1.graduation.coordinatorName);
+System.debug(student1.graduation.approvalGrade);

@@ -1,0 +1,46 @@
+
+
+// student 1
+
+Student student1 = new Student();
+student1.firstName = 'Iago';
+student1.lastName = 'Bernado Fariza';
+student1.email = 'IagoBern@pragma.com';
+student1.isLegal = true;
+student1.isScholarshipHolder = true;
+student1.age = 21;
+student1.registrationNumber = 82347347; 
+student1.examGrade = 8.79; 
+student1.graduationName = 'Computer Engeering';
+
+System.debug('student1 =. '+ student1);
+
+// student 2
+
+Student student2 = new Student();
+student2.firstName = 'Lucca';
+student2.lastName = 'Nathan Moraes';
+student2.email = 'NathanMor@pragma.com';
+student2.isLegal = false;
+student2.isScholarshipHolder = false;
+student2.age = 20;
+student2.registrationNumber = 82347348; 
+student2.examGrade = 7.40; 
+student2.graduationName = 'Computer Engeering';
+
+System.debug('student2 =. '+ student2);
+
+// student 3
+
+Student student3 = new Student();
+student3.firstName = 'Eduarda';
+student3.lastName = 'Carla Benedita';
+student3.email = 'CarlaBend@pragma.com';
+student3.isLegal = true;
+student3.isScholarshipHolder = false;
+student3.age = 21;
+student3.registrationNumber = 82347349; 
+student3.examGrade = 9.23; 
+student3.graduationName = 'Computer Science';
+
+System.debug('student3 =. '+ student3);
